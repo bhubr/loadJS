@@ -10,7 +10,10 @@
 		if (cb && typeof(cb) === "function") {
 			script.onload = cb;
 		}
-		return script;
+		else {
+			// Promisified
+			return new Promise(s => script.onload = s);
+		}
 	};
 	// commonjs
 	if( typeof module !== "undefined" ){

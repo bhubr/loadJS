@@ -1,0 +1,1 @@
+console.log('I am script.js and was loaded by promisified loadJS')

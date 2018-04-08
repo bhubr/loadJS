@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Test promisified loadJS</title>
+    <script src="loadJS.js"></script>
+  </head>
+  <body>
+    <script>
+      loadJS('/script.js')
+      .then(() => console.log('Done loading script.js'))
+    </script>
+  </body>
+</html>
